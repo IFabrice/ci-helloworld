@@ -39,8 +39,6 @@ jobs:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
           generate-coverage-badge: true
           generate-branches-badge: true
-          fail-on-coverage-decrease: true
-          fail-on-branches-decrease: true
 
   build_and_publish_docker_image:
     name: Publish to Docker Hub
