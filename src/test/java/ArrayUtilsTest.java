@@ -52,4 +52,11 @@ public class ArrayUtilsTest {
 
         assertEquals(2, ArrayUtils.countOf(ints, 3));
     }
+
+    @Test
+    void testCountOfEmptyInput() {
+        int[] ints = new int[]{};
+
+        assertEquals(0, ArrayUtils.countOf(ints, 3));
+    }
 }
