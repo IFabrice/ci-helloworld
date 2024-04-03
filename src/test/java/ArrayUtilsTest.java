@@ -59,4 +59,11 @@ public class ArrayUtilsTest {
 
         assertEquals(0, ArrayUtils.countOf(ints, 3));
     }
+
+    @Test
+    void testCountOfNoHit() {
+        int[] ints = new int[]{2, 3, 4, 5};
+
+        assertEquals(0, ArrayUtils.countOf(ints, 8));
+    }
 }
